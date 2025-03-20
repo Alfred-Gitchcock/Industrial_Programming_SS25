@@ -121,7 +121,11 @@ while True:
 
       #showing leaderboard
       print("The current 5 top scores are:")
-      print(scores)
+      print(scores[0][0], " - ", scores[0][1])
+      print(scores[1][0], " - ", scores[1][1])
+      print(scores[2][0], " - ", scores[2][1])
+      print(scores[3][0], " - ", scores[3][1])
+      print(scores[4][0], " - ", scores[4][1])
 
       #asking player if they want to play again
       while True:
