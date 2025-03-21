@@ -37,14 +37,15 @@ while True:
             #making sure that high_bound is an int
             try:
                   high_bound = int(input("Choose upper bound of number generation range: "))
+                  # making sure high_bound is a valid int
+                  if high_bound > 1:
+                        break
+                  else:
+                        print("This is not a valid number. Please choose any integer > 1.")
             except:
                   print("That's not a valid option! Please enter an integer instead.")
 
-            #making sure high_bound is a valid int
-            if high_bound > 1:
-                  break
-            else:
-                  print("This is not a valid number. Please choose any integer > 1.")
+
 
       #determining number to guess
       random_number = np.random.randint(1,high_bound)
